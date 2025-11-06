@@ -123,7 +123,7 @@ public class breakaplate {
 		JLabel lblNewLabel = new JLabel("You won:");
 		lblNewLabel.setBounds(230, 250, 77, 14);
 		panel.add(lblNewLabel);
-		
+		//
 		JLabel lblNewLabel_1 = new JLabel("Break A Plate");
 		lblNewLabel_1.setBounds(207, 11, 132, 14);
 		panel.add(lblNewLabel_1);
