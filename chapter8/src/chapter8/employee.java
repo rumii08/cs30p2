@@ -1,39 +1,55 @@
 package chapter8;
 
-public abstract class employee 
+// Abstract class
+public abstract class employee {
 
-{
-	private string FirstName, Lastname;
+    private String firstName;
+    private String lastName;
 
-	//Constructor method
-	
-	public employee(string f,string l)
-	
-	
-	
-	{
-	 FirstName = f;
-	 
-	 Lastname= l;
+    // Constructor
+    public employee(String fn, String ln) {
+        firstName = fn;
+        lastName = ln;
+    }
 
-	}
-        public employee()
-        return(FirstName + " " + Lastname);
-        
-        public class managher extends employee
-        
-        private double yearlysalary;
-        
-        public Manager(string fn, string ln double S);
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+    // Method to return full name
+    public String getFullName() {
+        return firstName + " " + lastName;
+    }
 }
+
+// Manager subclass
+class Manager extends employee {
+
+    private double yearlySalary;
+
+    // Constructor
+    public Manager(String fn, String ln, double s) {
+        super(fn, ln);   // call parent constructor
+        yearlySalary = s;
+    }
+
+    public double getYearlySalary() {
+        return yearlySalary;
+    }
+    
+    private double hourlypayrate;
+    
+    
+    
+    
+    
+}
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+

@@ -25,6 +25,7 @@ public class Demo314 {
 
 	private JFrame frame;
 	private JTextField ln;
+
 	private JTextField fn;
 
 	/**
